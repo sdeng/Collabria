@@ -1,0 +1,20 @@
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.chat-box {
+    width: 420px;
+    border: 1px solid #ccc;
+    padding: 0px;
+}
+
+.chat-message {
+    width: 400px;
+    margin: 10px 0 10px 10px;
+    border: none;
+}
+
+.timestamp {
+    color: #ccc;
+}

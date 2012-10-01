@@ -1,0 +1,34 @@
+<head>
+    <title>Collaboria</title>
+</head>
+
+
+<body>
+    <h1>Collaboria</h1>
+
+    <div class="chat-box">
+        {{> chat }}
+        {{> input }}
+    </div>
+</body>
+
+
+<template name="input">
+    <p>
+        <input type="text" id="input-box" class="chat-message" placeholder="type your message here" />
+    </p>
+</template>
+
+
+<template name="chat">
+    {{# each messages }}
+        {{> message }}
+    {{/ each }}
+</template>
+
+
+<template name="message">
+    <p class="chat-message">
+        [<span class="timestamp">{{ timestamp }}</span>] {{ message }}
+    </p>
+</template>
