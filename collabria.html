@@ -29,6 +29,7 @@
 
 <template name="message">
     <p class="chat-message">
-        [<span class="timestamp">{{ timestamp }}</span>] {{ message }}
+        <span class="timestamp">[{{ timestamp }}]</span>
+        <span {{# if color }}style="color: {{color}}"{{/ if }}>{{ message }}</span>
     </p>
 </template>
